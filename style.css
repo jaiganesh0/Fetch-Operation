@@ -1,0 +1,13 @@
+*{box-sizing:border-box}body{margin:0;background:#0f1530;color:#e9ecf8;font-family:"Segoe UI",system-ui,sans-serif;line-height:1.5}
+.top,main{max-width:1050px;margin:auto;padding:1rem}.top{padding-top:2rem}h1{margin:0;font-size:clamp(1.8rem,5vw,2.5rem)}.top p{color:#aab2d5;margin:.2rem 0 0}
+.tools{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1rem}.sr{position:absolute;left:-999px}input,select{font:inherit;padding:.65rem .9rem;border:1px solid #2f3a66;border-radius:10px;background:#1a2147;color:#fff}input{flex:1 1 220px}
+.banner{background:#3a2f12;border:1px solid #b8860b;color:#ffd978;border-radius:10px;padding:.7rem 1rem;margin-bottom:1rem;display:flex;gap:.8rem;align-items:center;justify-content:space-between;flex-wrap:wrap}.banner.err{background:#3a1220;border-color:#c2304a;color:#ffb3c1}
+.banner button{font:inherit;font-weight:600;padding:.3rem .9rem;border-radius:8px;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem}
+.card{background:#1a2147;border:1px solid #2f3a66;border-radius:14px;overflow:hidden;animation:in .4s ease both}@keyframes in{from{opacity:0;transform:translateY(10px)}}
+.card .pic{aspect-ratio:1;background:#27358f;display:grid;place-items:center;font-size:3rem;font-weight:800}.card img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.card .b{padding:.8rem 1rem}.card h2{margin:0 0 .3rem;font-size:1.05rem}.card p{margin:0;color:#aab2d5;font-size:.9rem}
+.badge{display:inline-block;font-size:.78rem;font-weight:700;padding:.1rem .6rem;border-radius:999px;margin-bottom:.4rem}.alive{background:#12392b;color:#4be3a0}.dead{background:#3a1220;color:#ff8da1}.unknown{background:#2f3340;color:#c8cde0}
+.sk{height:300px;border-radius:14px;background:linear-gradient(90deg,#1a2147 25%,#252e5e 50%,#1a2147 75%);background-size:200% 100%;animation:sh 1.2s infinite}@keyframes sh{to{background-position:-200% 0}}
+.more{text-align:center;padding:1.5rem}.more button{font:inherit;font-weight:700;padding:.7rem 1.8rem;border:0;border-radius:10px;background:#d6246e;color:#fff;cursor:pointer}.more button:disabled{opacity:.6}
+.empty{grid-column:1/-1;text-align:center;color:#aab2d5;padding:2rem}:focus-visible{outline:3px solid #17a8cf;outline-offset:2px}

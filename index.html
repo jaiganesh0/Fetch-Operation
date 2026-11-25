@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Character Explorer | Async Fetch</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="top"><h1>Character explorer</h1><p>Data loaded live from the Rick and Morty public API with async/await.</p></header>
+<main><form id="f" class="tools" role="search"><label class="sr" for="q">Search by name</label><input id="q" type="search" placeholder="Search by name, e.g. rick">
+<label class="sr" for="st">Status</label><select id="st"><option value="">Any status</option><option>alive</option><option>dead</option><option>unknown</option></select></form>
+<div id="banner" class="banner" role="status" hidden></div><div id="grid" class="grid" aria-live="polite" aria-busy="false"></div>
+<div class="more"><button id="more" type="button" hidden>Load more</button></div></main><script src="script.js"></script></body></html>
